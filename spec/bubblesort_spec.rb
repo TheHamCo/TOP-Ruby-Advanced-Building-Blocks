@@ -10,9 +10,9 @@ describe 'bubblesort' do
 	end
 end
 
-# describe 'bubble_sort_by' do
-# 	it 'sorts an array based on a block' do
-# 		 bubble_sort_by(["hi","hello","hey"]) {|left,right| left.length - right.length}.should == ["hi", "hey", "hello"]
-#     end
+describe 'bubble_sort_by' do
+	it 'sorts an array based on a block' do
+		 bubble_sort_by(["hi","hello","hey"]) {|left,right| left.length - right.length}.should == ["hi", "hey", "hello"]
+    end
 
-# end
+end
