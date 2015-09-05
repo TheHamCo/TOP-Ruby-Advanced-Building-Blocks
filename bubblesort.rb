@@ -4,11 +4,12 @@ def bubble_sort(array)
 
 	begin
 	swapped = false
-	sorted_array.each_with_index do |elem, ind|
-		break if ind+1 == sorted_array.length
+	0.upto(sorted_array.length-2) do |i|
+		left = sorted_array[i]
+		right = sorted_array[i+1]
 
-		if elem > sorted_array[ind+1]
-			sorted_array[ind], sorted_array[ind+1] = sorted_array[ind+1], elem
+		if left>right
+			sorted_array[i], sorted_array[i+1] = right,left
 			swapped = true
 		end
 	end
